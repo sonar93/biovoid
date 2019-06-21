@@ -1,0 +1,54 @@
+@import "abstracts/variables";
+.wrapper{
+  margin-bottom: 2rem;
+}
+
+.content{
+  &__left{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    .search{
+      width: 100%;
+      height: 100%;
+      border: .1rem solid #ccc;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      outline: none;
+    }
+
+    &__input{
+      margin: 0;
+      padding: 0 0 0 1.5rem;
+    }
+
+    &__button{
+      margin: 0;
+      padding: 0 1.5rem 0 0;
+    }
+
+    .button{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-grow: 1;
+      color: white;
+      background: $blue;
+      text-decoration: underline;
+      padding: 1rem 3rem 1rem 2rem;
+      border: none;
+      outline: none;
+      margin: 0;
+      align-items: center;
+
+      &:active{
+
+      }
+      &__icon {
+        width: 2rem;
+        height: 2.2rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<section class="description">
+  <article class=article>
+    <h2 class="article__title">
+      {{article.title}}
+    </h2>
+    <p class="article__body">
+      {{article.content}}
+    </p>
+  </article>
+  <div class="features">
+    <div class="features__item" *ngFor="let item of features" [style.borderLeftColor] = item.color >
+      <div class="features__item__content">
+        <h2 class="features__item--title" [style.color] = item.color >{{item.title}}</h2>
+        <p> {{item.content}} </p>
+      </div>
+    </div>
+  </div>
+</section>

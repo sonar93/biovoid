@@ -1,0 +1,17 @@
+<header class="header row">
+  <div class="header__logo col-lg-4">
+    <img src="assets/img/logo.png" alt="Biovoid" class="header__logo--img">
+  </div>
+  <nav class="header__nav col-lg-8 hidden-lg-down">
+    <ul class="row" >
+      <li *ngFor="let param of menu" class="header__nav--item" [routerLink]= "param.url"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }">
+        <a>
+          {{param.item}}
+        </a>
+
+      </li>
+    </ul>
+  </nav>
+</header>

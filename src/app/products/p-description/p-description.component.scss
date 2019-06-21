@@ -1,0 +1,26 @@
+@import 'abstracts/variables';
+
+.article{
+
+    margin-bottom: 5.3rem;
+    &__title{
+        font-size: 2.4rem;
+        font-weight: 300;
+    }
+
+    &__body{
+        font-size: 1.4rem;
+    }
+}
+
+.features {
+    &__item{
+        border: 1px solid #ccc;
+        margin-bottom: 2.8rem;
+        border-left: 1.9rem solid;
+
+        &__content{
+            padding: 1.5rem;
+        }
+    }
+}

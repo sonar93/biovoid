@@ -1,0 +1,12 @@
+@import "abstracts/variables";
+
+.footer {
+    margin-top: auto;
+    background-color: $white-s;
+    width: 100%;
+    margin-bottom: 3.4rem;
+
+    &__text {
+        padding: 15px;
+    }
+}
