@@ -2,8 +2,6 @@
 
 .content {
 
-    margin-bottom: 3rem;
-
   &__left {
     &__item {
       width: 100%;
@@ -23,6 +21,7 @@
       &--blue {
         height: 7rem;
         background-color: $dark-blue;
+        margin-bottom: 2.8rem;
       }
 
       &--yellow {
