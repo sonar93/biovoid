@@ -1,0 +1,103 @@
+@import 'abstracts/variables';
+
+.contact{
+  background: $white-s;
+  margin-bottom: 2.8rem;
+
+  &__description{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+    background-color: $pink;
+    color: white;
+    margin: 0;
+
+    &__icon{
+      padding: 1rem;
+      margin: 1rem;
+      align-self: center;
+      &--plane{
+        width: 3rem;
+       // padding: 1.5rem;
+        //margin: 2rem;
+      }
+    }
+
+    &__title{
+      margin: 1rem 1rem 1rem 0;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      left: 2%;
+      top: 93%;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-top: 1rem solid $pink;
+      transform: rotate(-90deg);
+      transition: ease-out .3s;
+
+    }
+  }
+
+  &__form {
+    padding: 2rem;
+    color: #000;
+
+    form {
+      margin-bottom: 10px;
+    }
+
+    .alert {
+      p {
+        margin: 0;
+      }
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .form-text {
+      font-size: 1.4rem;
+    }
+
+    .form-control{
+      border-radius: 0;
+      border: .2rem solid #bababa;
+      outline: none;
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .catchphrase {
+      text-align: center;
+      font-size: 42px;
+      position: absolute;
+      color: #f1f1f1;
+      padding: 40px;
+    }
+
+    &--right{
+      height: 100%;
+    }
+
+    &--submit {
+      color: white;
+      background-color: $pink;
+      width: 11.4rem;
+      border-radius: 0;
+      height: 3.1rem;
+      font-size: 1.2rem;
+    }
+
+    #message{
+      height: 13.2rem;
+      resize: none;
+    }
+  }
+}

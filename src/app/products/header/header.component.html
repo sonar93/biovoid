@@ -1,8 +1,8 @@
 <div class="content">
   <div class="row">
     <div class="content__left col-md-6">
-      <div class="content__left__item" *ngFor = "let item of fluid" [style.width] = item.width>
-        <div class="content__left__item--{{item.color}}">
+      <div class="content__left__item" *ngFor = "let item of fluid; let i = index" [style.width] = item.width>
+        <div class="content__left__item--{{item.color}}" id = "item_{{i}}">
           <div class="content-body">
             <div class="content-body__icon">
               <img src={{item.icon}} class="content-body__icon--img" alt="Description">

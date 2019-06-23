@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {log} from 'util';
+import {stringify} from 'querystring';
 
 @Component({
   selector: 'products-header',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   fluid: Array<object> = [
     {
@@ -43,11 +46,9 @@ export class HeaderComponent implements OnInit {
       next: 'assets/icons/arrow-right.png',
       width: '33.3333333333%',
       color: 'yellow',
-      mTop: '-18.2%'
     },
   ];
 
   ngOnInit() {
   }
-
 }
